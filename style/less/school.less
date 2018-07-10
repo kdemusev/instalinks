@@ -1,0 +1,263 @@
+// out: ../base.css, sourcemap: false, compress: true
+
+@bgcolor: white;
+@bgcolor2: #e2e2e2;
+@hdcolor: #000000;
+@hgcolor: #529028;
+@hgcolorhover: #60a82f;
+@color: #292929;
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.top {
+  height: 50px;
+  text-align: left;
+  padding-left: 40px;
+  position: relative;
+  margin: 5px 0;
+
+  .topmenu {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: right;
+  }
+
+
+  .usermenu {
+    display: inline-block;
+    line-height: 40px;
+    margin: 5px 20px;
+    text-align: center;
+
+    p {
+      margin: 0 20px;
+      vertical-align: middle;
+      display: inline-block;
+    }
+  }
+
+  .mainlogo {
+    margin: 5px 20px;
+    line-height: 40px;
+    vertical-align: middle;
+  }
+
+}
+
+.land {
+  background-image: url(landback.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  color: @bgcolor;
+  text-align: center;
+  margin-bottom: 6vh;
+
+  .container {
+    padding-top: 20vh;
+  }
+}
+
+.description {
+  position: relative;
+  margin-bottom: 10vh;
+
+  .oneinarow {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 6vh;
+
+    .col {
+      display: inline-block;
+      width: 48%;
+      vertical-align: middle;
+
+      a {
+        margin-left: 0;
+      }
+    }
+
+  }
+}
+
+.details {
+  text-align: center;
+  width: 1000px;
+  min-width: 1000px;
+  margin: 15vh auto;
+  text-align: center;
+  line-height: 2em;
+
+  b {
+    color: @hgcolor;
+  }
+
+  .oneinarow {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 6vh;
+
+    .col {
+      width: 31%;
+      margin-right: 3%;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .col:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.linkslist {
+    margin: 6vh 0 12vh 0;
+
+    .onelink {
+      background-color: @bgcolor2;
+      position: relative;
+      text-align: left;
+      padding: 20px 10px 20px 40px;
+      margin-bottom: 20px;
+
+      .sortbox {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        background-color: @hgcolor;
+        width: 30px;
+        background-image: url(dots.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: crosshair;
+      }
+
+      .info {
+        position: relative;
+
+        input {
+          border: none;
+          border-bottom: 2px solid @hgcolor;
+          width: 400px;
+          display: block;
+          margin-bottom: 10px;
+          padding-bottom: 5px;
+          background-color: transparent;
+        }
+
+        .buttonbar {
+          position: absolute;
+          bottom: -5px;
+          right: 10px;
+          line-height: normal;
+
+          a {
+            margin: 2px;
+            padding: 0;
+            line-height: normal;
+          }
+        }
+      }
+
+      .addbox {
+        text-align: center;
+        font-size: 3vh;
+        display: none;
+
+        h3 {
+          font-size: 3vh;
+          margin: 0;
+          text-align: center;
+          background-color: @bgcolor;
+        }
+
+        p:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+    }
+}
+
+.footer {
+  text-align: center;
+}
+
+.button {
+  background-color: @hgcolor;
+  color: @bgcolor;
+  font-weight: bold;
+  padding: 0 15px;
+}
+
+.button:hover {
+  background-color: @hgcolorhover;
+  color: @bgcolor;
+}
+
+a, button {
+  text-decoration: none;
+  color: @color;
+  display: inline-block;
+  line-height: 40px;
+  margin: 5px 20px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+a:last-of-type {
+    margin-right: 5px;
+}
+
+a:hover, button:hover {
+  color: @hdcolor;
+}
+
+h1 {
+  font-size: 3.5vh;
+  margin-bottom: 4vh;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2vh;
+  margin-bottom: 2.5vh;
+}
+
+h5 {
+  font-size: 6vh;
+  display: inline-block;
+  margin: 3vh 0 0 0;
+}
+
+h2 {
+  font-size: 3vh;
+  margin-bottom: 2vh;
+}
+
+ul {
+  margin: 3vh 20px;
+  text-align: left;
+  list-style-image: url(ok.png);
+}
+
+
+p {
+  margin: 10px 0;
+}
+
+p:last-of-type {
+  margin-bottom: 6vh;
+}

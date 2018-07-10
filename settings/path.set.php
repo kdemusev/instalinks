@@ -1,0 +1,4 @@
+<?
+$__basepath = '/instalinks/';
+
+?>

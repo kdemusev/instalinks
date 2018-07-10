@@ -1,0 +1,23 @@
+AddDefaultCharset Off
+<IfModule mod_charset.c>
+CharsetDisable On
+CharsetRecodeMultipartForms Off
+</IfModule>
+
+php_flag display_errors off
+php_value error_reporting -1
+php_value upload_max_filesize 20971520
+php_value post_max_size 22020096
+
+
+
+DirectoryIndex index.php
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !^/instalinks 
+
+RewriteRule ^(newsfiles)/ - [L]
+
+RewriteRule ^([a-z0-9_]+)/?$ /index.php?section=$1
+RewriteRule ^([a-z0-9_]+)/([a-z0-9_]+)/?$ /index.php?section=$1&action=$2
+RewriteRule ^([a-z0-9_]+)/([a-z0-9_]+)/([0-9_]+)/?$ /index.php?section=$1&action=$2&id=$3
